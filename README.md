@@ -1,7 +1,7 @@
 # NoticeBoard
 
 This is a notice board android app, where college faculty from different department can post notice. Faculty member and Students can receive the notice from departments.
-- Download apk from [here](https://github.com/Ravi879/NoticeBoard/raw/master/noticeboard.apk).
+- Download apk from [here](https://github.com/Ravi879/NoticeBoard/raw/master/Noticeboard.apk).
 
 ## Overview
 
