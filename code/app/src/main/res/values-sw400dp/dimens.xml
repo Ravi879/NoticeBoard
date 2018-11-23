@@ -1,0 +1,7 @@
+<resources>
+
+    <!--Faculty Item Row-->
+    <dimen name="faculty_item_name_size">@dimen/_12ssp</dimen>
+    <dimen name="faculty_item_designation_size">@dimen/_11ssp</dimen>
+
+</resources>

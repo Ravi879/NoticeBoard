@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_notice_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:padding="16dp"
+    android:clickable="true">
+
+
+    <TextView
+        android:id="@+id/txt_issue_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/item_notice_row_date"
+        android:textSize="@dimen/notice_item_issue_date_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/notice_title"
+        android:textSize="@dimen/notice_item_title_size"
+        app:layout_constraintEnd_toStartOf="@+id/txt_issue_date"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/notice_description"
+        android:textSize="@dimen/notice_item_description_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_title" />
+
+
+    <TextView
+        android:id="@+id/postedby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/label_item_notice_posted_by"
+        android:textColor="@color/black_light"
+        android:textSize="@dimen/notice_item_issuer_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_description" />
+
+    <TextView
+        android:id="@+id/txt_issuer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/notice_issuer"
+        android:textSize="@dimen/notice_item_issuer_size"
+        app:layout_constraintStart_toEndOf="@+id/postedby"
+        app:layout_constraintTop_toTopOf="@+id/postedby" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

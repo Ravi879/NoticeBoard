@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorGood">#4CAF50</color>
+    <color name="colorBad">#F44336</color>
+
+
+    <!--Presto Green-->
+    <color name="prestoPrimary">#00AA8D</color>
+    <color name="prestoLighter">#00BF9A</color>
+    <color name="prestoDarker">#008975</color>
+
+    <color name="prestoVeryDarker">#FF007967</color>
+
+    <color name="pink_primary">#E91E63</color>
+    <color name="pink_primary_dark">#C2185B</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="textColor">#6e6e6e</color>
+    <color name="editTextBG">#DADADA</color>
+
+    <color name="edit_profile_text">#dd1f1e1e</color>
+
+    <color name="edit_profile_disabled_edt_text_bg">#c6c6c6</color>
+    <!--<color name="notice_issuer">#3367d6</color>-->
+
+
+    <color name="colorHighlight">#B6B6B6</color>
+
+    <color name="white_line">#f9d7db</color>
+
+    <color name="view_line">#e0e0e0</color>
+
+    <color name="white">#fff</color>
+    <color name="white_dark_light">#F5F5F5</color>
+
+    <color name="gray">#999999</color>
+
+    <color name="gray_light">#F5F5F5</color>
+    <color name="gray_very_light">#e0e0e0</color>
+
+    <color name="blue_light">#2683c2</color>
+
+    <color name="register_disbaled_edit_text">#ee4b91c2</color>
+
+    <color name="black_light">#656565</color>
+    <color name="black_dark">#1f1e1e</color>
+
+    <color name="notice_title">#000000</color>
+    <color name="notice_description">#7a7a7a</color>
+    <color name="notice_issuer">#555555</color>
+    <color name="item_notice_row_date">#1976D2</color>
+    <color name="notice_last_date">#EA4335</color>
+
+    <color name="white_light">#E0E0E0</color>
+
+    <color name="snackbar_action">#FFF4E736</color>
+    <color name="loading_spinner">#FFF4E736</color>
+
+
+    <color name="edit_text_disabled_text">#7e7d7d</color>
+</resources>

@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_pink"
+    tools:context="coms.dypatil.noticeboard.ui.activity.RegisterActivity">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/layout_app_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/app_bar"
+        android:layout_marginBottom="@dimen/register_frame_margin_bottom"
+        android:layout_marginEnd="@dimen/register_frame_horizontal_margin"
+        android:layout_marginStart="@dimen/register_frame_horizontal_margin"
+        android:layout_marginTop="@dimen/register_frame_margin_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_bar">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/register_scroll_margin_top"
+            android:background="@drawable/gradient_light_gray"
+            android:paddingBottom="5dp"
+            android:paddingEnd="@dimen/register_scroll_horizontal_padding"
+            android:paddingStart="@dimen/register_scroll_horizontal_padding"
+            android:paddingTop="@dimen/register_scroll_vertical_padding"
+            android:scrollbars="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingEnd="4dp"
+                    android:paddingStart="2dp">
+
+                    <LinearLayout
+                        style="@style/register_field_layout"
+                        android:layout_marginTop="@dimen/_5sdp">
+
+                        <EditText
+                            android:id="@+id/edt_first_name"
+                            style="@style/register_edt"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.48"
+                            android:hint="@string/hint_first_name"
+                            android:inputType="textPersonName"
+                            android:maxLength="15" />
+
+                        <View style="@style/register_view_line" />
+
+                        <EditText
+                            android:id="@+id/edt_last_name"
+                            style="@style/register_edt"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.49"
+                            android:hint="@string/hint_last_name"
+                            android:inputType="textPersonName"
+                            android:maxLength="15" />
+                    </LinearLayout>
+
+
+                    <LinearLayout style="@style/register_field_layout">
+
+                        <ImageView
+                            style="@style/register_img"
+                            android:contentDescription="@string/img_desc_enter_email"
+                            android:src="@drawable/ic_email" />
+
+                        <View style="@style/register_view_line" />
+
+                        <EditText
+                            android:id="@+id/edt_email"
+                            style="@style/register_edt"
+                            android:layout_width="match_parent"
+                            android:hint="@string/hint_email"
+                            android:inputType="textEmailAddress" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/register_field_layout">
+
+                        <ImageView
+                            style="@style/register_img"
+                            android:contentDescription="@string/img_desc_gender"
+                            android:src="@drawable/ic_gender" />
+
+                        <View style="@style/register_view_line" />
+
+                        <RadioGroup
+                            android:id="@+id/rGroup"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:paddingEnd="0dp"
+                            android:paddingStart="@dimen/register_field_horizontal_padding">
+
+                            <androidx.appcompat.widget.AppCompatRadioButton
+                                android:id="@+id/rbtn_male"
+                                style="@style/register_radio_btn"
+                                android:layout_weight="0.47"
+                                android:checked="true"
+                                android:text="@string/rbtn_male" />
+
+                            <androidx.appcompat.widget.AppCompatRadioButton
+                                android:id="@+id/rbtn_female"
+                                style="@style/register_radio_btn"
+                                android:layout_marginStart="@dimen/_4sdp"
+                                android:layout_weight="0.78"
+                                android:text="@string/rbtn_female" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/register_field_layout">
+
+                        <ImageView
+                            style="@style/register_img"
+                            android:contentDescription="@string/img_desc_dob"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_birthday" />
+
+                        <EditText
+                            android:id="@+id/edt_dob"
+                            style="@style/register_edt"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.8"
+                            android:background="@drawable/gradient_disabled_edt_text"
+                            android:enabled="false"
+                            android:focusable="false"
+                            android:hint="@string/hint_date_of_birth"
+                            android:inputType="date" />
+
+
+                        <ImageView
+                            android:id="@+id/img_btn_calendar"
+                            style="@style/register_img"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.2"
+                            android:contentDescription="@string/img_desc_btn_select_dob"
+                            android:onClick="btnClick"
+                            android:padding="4dp"
+                            android:src="@drawable/ic_calendar" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/register_field_layout">
+
+                        <ImageView
+                            android:id="@+id/txtDepartment"
+                            style="@style/register_img"
+                            android:contentDescription="@string/img_desc_department"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_department" />
+
+
+                        <View style="@style/register_view_line" />
+
+                        <Spinner
+                            android:id="@+id/spn_department"
+                            style="@style/register_spn" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/register_field_layout">
+
+                        <ImageView
+                            android:id="@+id/txtDesignation"
+                            style="@style/register_img"
+                            android:contentDescription="@string/img_desc_designation"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_designation" />
+
+                        <View style="@style/register_view_line" />
+
+                        <Spinner
+                            android:id="@+id/spn_designation"
+                            style="@style/register_spn" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_year"
+                        style="@style/register_field_layout"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/img_year"
+                            style="@style/register_img"
+                            android:contentDescription="@string/img_desc_year"
+                            android:src="@drawable/ic_year" />
+
+                        <View style="@style/register_view_line" />
+
+                        <Spinner
+                            android:id="@+id/spn_year"
+                            style="@style/register_spn" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/register_field_layout">
+
+                        <ImageView
+                            style="@style/register_img"
+                            android:contentDescription="@string/img_desc_year"
+                            android:src="@drawable/ic_phone" />
+
+                        <View style="@style/register_view_line" />
+
+                        <EditText
+                            android:id="@+id/edt_phone_no"
+                            style="@style/register_edt"
+                            android:layout_width="match_parent"
+                            android:hint="@string/hint_mobile_no"
+                            android:inputType="phone"
+                            android:maxLength="10" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        style="@style/register_field_layout"
+                        android:layout_marginBottom="8dp">
+
+                        <ImageView
+                            style="@style/register_img"
+                            android:contentDescription="@string/img_desc_password"
+                            android:src="@drawable/ic_lock" />
+
+
+                        <View style="@style/register_view_line" />
+
+                        <EditText
+                            android:id="@+id/edt_password"
+                            style="@style/register_edt"
+                            android:layout_width="match_parent"
+                            android:hint="@string/hint_password"
+                            android:inputType="textPassword"
+                            android:maxLength="12" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <com.github.ybq.android.spinkit.SpinKitView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/loading_indicator"
+                    style="@style/SpinKitView.Large.DoubleBounce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top"
+                    android:layout_marginTop="@dimen/_45sdp"
+                    android:visibility="gone"
+                    app:SpinKit_Color="@color/colorAccent" />
+
+            </FrameLayout>
+        </ScrollView>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_user_profile"
+            android:layout_width="@dimen/register_profile_img_size"
+            android:layout_height="@dimen/register_profile_img_size"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:elevation="5dp"
+            android:onClick="btnClick"
+            android:src="@drawable/default_profile_logo"
+            tools:targetApi="lollipop" />
+
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/register_btn_layout_height"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="@dimen/register_frame_horizontal_margin"
+        android:layout_marginStart="@dimen/register_frame_horizontal_margin"
+        android:layout_marginTop="@dimen/register_btn_margin_top"
+        android:background="@drawable/btn_presto_back"
+        android:fontFamily="@font/open_sans"
+        android:onClick="btnClick"
+        android:text="@string/btn_sign_up"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/register_btn_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+
+    <com.github.ybq.android.spinkit.SpinKitView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/spin_loading_bar"
+        style="@style/SpinKitView.Large.DoubleBounce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        app:SpinKit_Color="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

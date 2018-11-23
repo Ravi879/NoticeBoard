@@ -1,0 +1,58 @@
+<resources>
+    <!--Login Activity-->
+    <dimen name="login_horizontal_margin">64dp</dimen>
+
+    <dimen name="college_name_margin_top">@dimen/_12sdp</dimen>
+
+    <dimen name="logo_width">154dp</dimen>
+
+
+    <!--Register Activity-->
+    <dimen name="register_frame_margin_top">@dimen/_29sdp</dimen>
+    <dimen name="register_frame_horizontal_margin">124dp</dimen>
+
+    <dimen name="register_scroll_margin_top">104dp</dimen>
+    <dimen name="register_scroll_horizontal_padding">48dp</dimen>
+    <dimen name="register_scroll_vertical_padding">88dp</dimen>
+
+    <dimen name="register_profile_img_size">142dp</dimen>
+
+    <dimen name="register_field_layout_height">@dimen/_28sdp</dimen>
+
+    <dimen name="profile_view_line_margin_top">22dp</dimen>
+
+    <dimen name="register_view_line_width">6dp</dimen>
+
+    <!--Edit Profile Activity-->
+    <dimen name="edit_profile_horizontal_margin">@dimen/_42sdp</dimen>
+
+    <dimen name="edit_profile_img_size">@dimen/_70sdp</dimen>
+    <dimen name="edit_profile_img_border_width">4dp</dimen>
+    <dimen name="edit_profile_img_padding_bottom">@dimen/_12sdp</dimen>
+    <dimen name="edit_profile_btn_margin_vertical">32dp</dimen>
+
+
+    <!--Create Notice-->
+    <dimen name="create_notice_horizontal_margin">@dimen/_18sdp</dimen>
+    <dimen name="create_notice_vertical_margin">@dimen/_4sdp</dimen>
+    <dimen name="create_notice_text_size">@dimen/_10ssp</dimen>
+
+    <!--Notice Detail-->
+    <dimen name="notice_detail_title_size">@dimen/_12ssp</dimen>
+    <dimen name="notice_detail_description_size">@dimen/_9ssp</dimen>
+    <dimen name="notice_detail_text_size">@dimen/_10ssp</dimen>
+
+    <!--Notice Item Row-->
+    <dimen name="notice_item_issue_date_size">@dimen/_9ssp</dimen>
+    <dimen name="notice_item_title_size">@dimen/_10ssp</dimen>
+    <dimen name="notice_item_description_size">@dimen/_9ssp</dimen>
+    <dimen name="notice_item_issuer_size">@dimen/_9ssp</dimen>
+
+
+    <!--Faculty Item Row-->
+    <dimen name="faculty_item_name_size">@dimen/_9ssp</dimen>
+    <dimen name="faculty_item_designation_size">@dimen/_8ssp</dimen>
+
+
+</resources>
+

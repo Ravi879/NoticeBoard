@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_pink_blue"
+    android:scrollbars="vertical"
+    tools:context="coms.dypatil.noticeboard.ui.activity.LoginActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/login_horizontal_margin"
+        android:layout_marginRight="@dimen/login_horizontal_margin"
+        android:layout_marginTop="@dimen/login_vertical_margin"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_16sdp">
+
+
+        <com.github.ybq.android.spinkit.SpinKitView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/loading_indicator"
+            style="@style/SpinKitView.Large.DoubleBounce"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:SpinKit_Color="@color/loading_spinner"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/college_logo"
+            android:layout_width="@dimen/logo_width"
+            android:layout_height="@dimen/logo_height"
+            android:contentDescription="@string/college_logo"
+            android:src="@drawable/clg_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtDYPatil"
+            style="@style/college_name"
+            android:layout_marginTop="@dimen/college_name_margin_top"
+            android:text="@string/college_name_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/college_logo" />
+
+        <TextView
+            android:id="@+id/txtEnggTech"
+            style="@style/college_name"
+            android:text="@string/college_name_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtDYPatil" />
+
+        <TextView
+            android:id="@+id/txtCollege"
+            style="@style/college_name"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:text="@string/college_name_3"
+            android:textSize="@dimen/_13ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtEnggTech" />
+
+        <EditText
+            android:id="@+id/edt_email"
+            style="@style/login_edit_text"
+            android:layout_marginTop="@dimen/_32sdp"
+            android:drawableStart="@drawable/ic_person_white"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress"
+            android:maxLength="25"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtCollege" />
+
+        <View
+            android:id="@+id/view1"
+            style="@style/login_view_line"
+            app:layout_constraintEnd_toEndOf="@+id/edt_email"
+            app:layout_constraintStart_toStartOf="@+id/edt_email"
+            app:layout_constraintTop_toBottomOf="@+id/edt_email" />
+
+        <EditText
+            android:id="@+id/edt_password"
+            style="@style/login_edit_text"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:drawableStart="@drawable/ic_lock_white"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:maxLength="12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view1" />
+
+        <View
+            android:id="@+id/view2"
+            style="@style/login_view_line"
+            app:layout_constraintEnd_toEndOf="@+id/edt_password"
+            app:layout_constraintStart_toStartOf="@+id/edt_password"
+            app:layout_constraintTop_toBottomOf="@+id/edt_password" />
+
+        <Button
+            android:id="@+id/btn_login"
+            style="@style/login_button"
+            android:layout_marginTop="@dimen/_28sdp"
+            android:background="@drawable/btn_presto_back"
+            android:onClick="onClickButton"
+            android:text="@string/btn_log_in"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+        <Button
+            android:id="@+id/btn_sign_up"
+            style="@style/login_button"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/btn_blue_back"
+            android:onClick="onClickButton"
+            android:text="@string/btn_sign_up"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

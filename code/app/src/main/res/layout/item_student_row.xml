@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_faculty"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginRight="16dp"
+    android:clickable="true"
+    android:elevation="5dp"
+    android:focusable="true"
+    app:cardCornerRadius="4dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true"
+    tools:targetApi="lollipop">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_circle_profile_pic"
+            android:layout_width="59dp"
+            android:layout_height="59dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_img_loading"
+            app:civ_border_color="@color/gray_very_light"
+            app:civ_border_width="0.4dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp">
+
+            <TextView
+                android:id="@+id/txt_issuer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="aaaa"
+                android:textSize="@dimen/faculty_item_name_size"
+                android:textStyle="bold" />
+
+            <!--
+                        <TextView
+                            android:id="@+id/txt_department"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt_issuer_name"
+                            android:layout_marginTop="4dp"
+                            android:textSize="@dimen/faculty_item_designation_size" />
+            -->
+
+            <TextView
+                android:id="@+id/txt_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_issuer_name"
+                android:layout_alignStart="@+id/txt_issuer_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:text="aaa"
+                android:textSize="@dimen/faculty_item_designation_size" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,188 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/layout_app_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_bar">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/create_notice_horizontal_margin"
+            android:text="@string/label_notice_title"
+            android:textSize="@dimen/create_notice_text_size"
+            app:layout_constraintEnd_toStartOf="@+id/edt_notice_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/edt_notice_title" />
+
+        <EditText
+            android:id="@+id/edt_notice_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/create_notice_horizontal_margin"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="@dimen/create_notice_vertical_margin"
+            android:background="@color/transparent"
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="@dimen/create_notice_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/create_notice_vertical_margin"
+            android:background="@color/view_line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_notice_title" />
+
+        <EditText
+            android:id="@+id/edt_notice_last_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:focusable="false"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@color/transparent"
+            android:textColor="@color/edit_text_disabled_text"
+            android:ems="10"
+            android:inputType="date"
+            android:textSize="@dimen/create_notice_text_size"
+            app:layout_constraintEnd_toStartOf="@+id/btn_calender"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/create_notice_vertical_margin"
+            android:text="@string/label_notice_last_date"
+            android:textSize="@dimen/create_notice_text_size"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <ImageButton
+            android:id="@+id/btn_calender"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:src="@drawable/ic_calendar"
+            android:tint="@color/pink_primary"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/create_notice_horizontal_margin"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:contentDescription="@string/img_desc_notice_select_last_date"
+            android:elevation="4dp"
+            android:focusable="true"
+            android:onClick="onClickButton"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="@+id/edt_notice_last_date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/edt_notice_last_date"
+            tools:targetApi="lollipop" />
+
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/create_notice_vertical_margin"
+            android:background="@color/view_line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_notice_last_date" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.github.ybq.android.spinkit.SpinKitView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/loading_indicator"
+        style="@style/SpinKitView.Large.DoubleBounce"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center|top"
+        app:SpinKit_Color="@color/colorAccent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/constraint"
+        android:layout_marginTop="@dimen/create_notice_vertical_margin"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edt_notice_description"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/create_notice_horizontal_margin"
+            android:layout_marginStart="@dimen/create_notice_horizontal_margin"
+            android:layout_weight="@integer/create_notice_top_layout_weight"
+            android:background="@color/transparent"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="@string/hint_description"
+            android:inputType="textMultiLine"
+            android:paddingBottom="2dp"
+            android:paddingTop="4dp"
+            android:textSize="@dimen/create_notice_text_size"
+            app:layout_constraintBottom_toTopOf="@+id/view5" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="@integer/create_notice_bottom_layout_weight"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/create_notice_vertical_margin"
+                android:layout_marginTop="@dimen/create_notice_vertical_margin"
+                android:background="@color/view_line" />
+
+            <Button
+                android:id="@+id/btn_send_notice"
+                android:layout_width="@dimen/_175sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view5"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/create_notice_vertical_margin"
+                android:layout_marginTop="@dimen/create_notice_vertical_margin"
+                android:background="@drawable/btn_pink_back"
+                android:elevation="4dp"
+                android:onClick="onClickButton"
+                android:text="@string/btn_send_notice"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                tools:targetApi="lollipop" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

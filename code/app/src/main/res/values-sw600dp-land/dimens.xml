@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--Login Activity-->
+    <dimen name="login_horizontal_margin">@dimen/_64sdp</dimen>
+
+    <dimen name="nav_drawer_width">@dimen/_110sdp</dimen>
+
+
+    <!-- UserLogin Profile List Activity -->
+    <dimen name="profile_list_rv_container_weight" format="float" type="dimen">0.45</dimen>
+    <dimen name="profile_list_profile_container_weight" format="float" type="dimen">0.55</dimen>
+
+    <!--Create Notice-->
+    <dimen name="create_notice_horizontal_margin">@dimen/_19sdp</dimen>
+    <dimen name="create_notice_top_layout" tools:ignore="ReferenceType">
+        @integer/create_notice_top_layout_weight
+    </dimen>
+    <dimen name="create_notice_bottom_layout" tools:ignore="ReferenceType">
+        @integer/create_notice_bottom_layout_weight
+    </dimen>
+
+    <!--Edit Profile Activity-->
+    <integer name="create_notice_top_layout_weight">3</integer>
+    <integer name="create_notice_bottom_layout_weight">1</integer>
+
+    <!--drawer-->
+    <dimen name="nav_drawer_height">185dp</dimen>
+
+</resources>
+

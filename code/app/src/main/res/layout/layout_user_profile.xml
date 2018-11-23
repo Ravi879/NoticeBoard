@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="8dp"
+    android:orientation="vertical"
+    tools:targetApi="lollipop">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mainInfoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="8dp"
+        android:paddingBottom="@dimen/_14sdp"
+        tools:targetApi="lollipop">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_circle_profile_pic"
+            android:layout_width="@dimen/profile_circle_img_size"
+            android:layout_height="@dimen/profile_circle_img_size"
+            android:layout_marginStart="@dimen/profile_content_horizontal_margin"
+            android:layout_marginTop="@dimen/profile_content_vertical_margin"
+            android:src="@drawable/ic_img_loading"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_user_name"
+            style="@style/profile_title_text"
+            android:layout_width="0dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="none"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/img_circle_profile_pic"
+            app:layout_constraintTop_toBottomOf="@+id/img_btn_edit_profile" />
+
+        <TextView
+            android:id="@+id/txt_designation"
+            style="@style/profile_field_text"
+            app:layout_constraintEnd_toEndOf="@+id/txt_user_name"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/txt_user_name"
+            app:layout_constraintTop_toBottomOf="@+id/txt_user_name" />
+
+        <View
+            android:id="@+id/view7"
+            android:layout_marginTop="18dp"
+            style="@style/profile_view_line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.208"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_circle_profile_pic" />
+
+        <ImageView
+            android:id="@+id/img_department"
+            style="@style/profile_field_img"
+            android:layout_marginStart="@dimen/profile_content_horizontal_margin"
+            android:src="@drawable/ic_department"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view7"
+            android:contentDescription="@string/img_desc_department" />
+
+        <TextView
+            android:id="@+id/txt_department"
+            style="@style/profile_field_text"
+            android:layout_marginStart="@dimen/profile_text_field_margin_start"
+            app:layout_constraintStart_toEndOf="@+id/img_department"
+            app:layout_constraintTop_toTopOf="@+id/img_department" />
+
+        <ImageView
+            android:id="@+id/img_gender"
+            style="@style/profile_field_img"
+            android:src="@drawable/ic_gender"
+            android:contentDescription="@string/img_desc_gender"
+            app:layout_constraintStart_toStartOf="@+id/img_department"
+            app:layout_constraintTop_toBottomOf="@+id/img_department" />
+
+
+        <TextView
+            android:id="@+id/txt_gender"
+            style="@style/profile_field_text"
+            app:layout_constraintStart_toStartOf="@+id/txt_department"
+            app:layout_constraintTop_toTopOf="@+id/img_gender" />
+
+
+        <ImageView
+            android:id="@+id/img_year"
+            style="@style/profile_field_img"
+            android:src="@drawable/ic_year"
+            app:layout_constraintStart_toStartOf="@+id/img_gender"
+            app:layout_constraintTop_toBottomOf="@+id/img_gender"
+            android:contentDescription="@string/img_desc_year" />
+
+
+        <TextView
+            android:id="@+id/txt_year"
+            style="@style/profile_field_text"
+            app:layout_constraintStart_toStartOf="@+id/txt_gender"
+            app:layout_constraintTop_toTopOf="@+id/img_year" />
+
+        <ImageView
+            android:id="@+id/img_dob"
+            style="@style/profile_field_img"
+            android:src="@drawable/ic_birthday"
+            app:layout_constraintStart_toStartOf="@+id/img_year"
+            app:layout_constraintTop_toBottomOf="@+id/img_year"
+            android:contentDescription="@string/img_desc_dob" />
+
+
+        <TextView
+            android:id="@+id/txt_dob"
+            style="@style/profile_field_text"
+            app:layout_constraintStart_toStartOf="@+id/txt_year"
+            app:layout_constraintTop_toTopOf="@+id/img_dob" />
+
+        <ImageButton
+            android:id="@+id/img_btn_edit_profile"
+            android:layout_width="@dimen/profile_img_edit_profile_size"
+            android:layout_height="@dimen/profile_img_edit_profile_size"
+            android:layout_marginEnd="@dimen/profile_content_horizontal_margin"
+            android:layout_marginTop="@dimen/profile_img_edit_profile_margin_top"
+            android:background="@drawable/gradient_pink_rounded"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_edit_profile_white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/img_desc_btn_edit_profile" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/profile_content_vertical_margin"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@color/white"
+        android:elevation="8dp"
+        android:paddingBottom="@dimen/_14sdp">
+
+        <TextView
+            android:id="@+id/txt_label_contact"
+            style="@style/profile_title_text"
+            android:text="@string/user_profile_label_contact"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view2"
+            style="@style/profile_view_line"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_label_contact" />
+
+        <ImageView
+            android:id="@+id/img_phone_no"
+            style="@style/profile_field_img"
+            android:layout_marginStart="@dimen/profile_content_horizontal_margin"
+            android:src="@drawable/ic_phone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2"
+            android:contentDescription="@string/img_desc_phone_no" />
+
+
+        <TextView
+            android:id="@+id/txt_phone_no"
+            style="@style/profile_field_text"
+            android:layout_marginStart="@dimen/profile_text_field_margin_start"
+            app:layout_constraintStart_toEndOf="@+id/img_phone_no"
+            app:layout_constraintTop_toTopOf="@+id/img_phone_no" />
+
+
+        <ImageView
+            android:id="@+id/img_email"
+            style="@style/profile_field_img"
+            android:src="@drawable/ic_email"
+            app:layout_constraintStart_toStartOf="@+id/img_phone_no"
+            app:layout_constraintTop_toBottomOf="@+id/img_phone_no"
+            android:contentDescription="@string/img_desc_enter_email" />
+
+        <TextView
+            android:id="@+id/txt_email"
+            style="@style/profile_field_text"
+            app:layout_constraintStart_toStartOf="@+id/txt_phone_no"
+            app:layout_constraintTop_toTopOf="@+id/img_email" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

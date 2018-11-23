@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="?android:attr/spinnerItemStyle"
+    android:singleLine="true"
+    android:textSize="@dimen/filter_spn_item_text"
+    android:ellipsize="marquee"
+    android:textColor="#444444" />

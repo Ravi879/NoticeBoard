@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:paddingEnd="@dimen/_16sdp"
+    android:paddingStart="@dimen/_16sdp"
+    android:paddingTop="@dimen/_16sdp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/domine_bold"
+        android:textSize="@dimen/filter_item_title_text"
+        android:text="@string/dialog_filter_notice_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <RadioGroup
+        android:id="@+id/rGroup_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@+id/tv_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rbtn_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:fontFamily="@font/open_sans"
+            android:textSize="@dimen/filter_item_label_text"
+            android:text="@string/dialog_filter_All"
+            android:textColor="@color/textColor" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rbtn_notice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/open_sans"
+            android:text="@string/dialog_filter_on_going"
+            android:textSize="@dimen/filter_item_label_text"
+            android:textColor="@color/textColor" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rbtn_expired_notice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans"
+            android:layout_marginTop="2dp"
+            android:text="@string/dialog_filter_expired"
+            android:textSize="@dimen/filter_item_label_text"
+            android:textColor="@color/textColor" />
+
+    </RadioGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

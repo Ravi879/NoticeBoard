@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <integer name="create_notice_top_layout_weight">4</integer>
+    <integer name="create_notice_bottom_layout_weight">1</integer>
+
+
+    <!--Login Activity-->
+    <dimen name="login_horizontal_margin">@dimen/_64sdp</dimen>
+
+    <dimen name="college_name_margin_top">0dp</dimen>
+
+
+    <!--Create Notice-->
+    <dimen name="create_notice_horizontal_margin">@dimen/_19sdp</dimen>
+    <dimen name="create_notice_top_layout" tools:ignore="ReferenceType">
+        @integer/create_notice_top_layout_weight
+    </dimen>
+    <dimen name="create_notice_bottom_layout" tools:ignore="ReferenceType">
+        @integer/create_notice_bottom_layout_weight
+    </dimen>
+
+
+    <!--Edit Profile-->
+
+
+</resources>
+

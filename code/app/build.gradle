@@ -1,0 +1,106 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "coms.dypatil.noticeboard"
+        minSdkVersion 17
+        targetSdkVersion 28
+        multiDexEnabled true
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-alpha2'
+    implementation 'androidx.multidex:multidex:2.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.1.0-alpha01'
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'org.mockito:mockito-core:2.21.0'
+    androidTestImplementation 'org.mockito:mockito-android:2.7.22'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+
+    //Provides useful extension function
+    implementation 'androidx.core:core-ktx:1.0.1'
+
+    //Auto Scaling dp and sp
+    implementation 'com.intuit.ssp:ssp-android:1.0.5'
+    implementation 'com.intuit.sdp:sdp-android:1.0.5'
+
+    //drawing circle around image
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+
+    //Loading animation
+    implementation 'com.github.ybq:Android-SpinKit:1.1.0'
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    kapt 'com.github.bumptech.glide:compiler:4.8.0'
+
+    //---------------------------------       Architecture components        -----------------------------------------------
+
+    // ViewModel and LiveData
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
+    kapt 'androidx.lifecycle:lifecycle-compiler:2.0.0'
+
+    //Room
+    implementation 'androidx.room:room-runtime:2.0.0'
+    implementation 'androidx.room:room-rxjava2:2.0.0'
+    kapt "androidx.room:room-compiler:2.0.0"
+
+    //--------------------------------------------------------------------------------
+
+    //RXJava2
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.10'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+
+
+    //-------------------- Firebase --------------------
+    implementation 'com.google.firebase:firebase-messaging:17.3.0'
+    implementation 'com.google.firebase:firebase-core:16.0.1'
+
+    //Real-time Database
+    implementation 'com.google.firebase:firebase-database:16.0.1'
+
+    //Firebase RemoteConfiguration for Array-Variables like Department, Designation & Year, etc....
+    implementation 'com.google.firebase:firebase-config:16.0.0'
+
+    //Authentication via E-Mail only
+    implementation 'com.google.firebase:firebase-auth:16.0.3'
+
+    //Media Storage such as Profile Pic Storage
+    implementation 'com.google.firebase:firebase-storage:16.0.1'
+
+    //Rxjava for firebase
+    implementation 'com.github.FrangSierra:RxFirebase:1.5.0'
+
+
+}
+
+apply plugin: 'com.google.gms.google-services'
+androidExtensions {
+    experimental = true
+}

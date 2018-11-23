@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="coms.dypatil.noticeboard">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+            android:name=".App"
+            android:allowBackup="true"
+            android:fullBackupContent="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:resizeableActivity="false"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:theme="@style/AppTheme"
+            tools:targetApi="n"
+            tools:ignore="GoogleAppIndexingWarning">
+
+        <activity
+                android:name="coms.dypatil.noticeboard.ui.activity.LoginActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+                android:name="coms.dypatil.noticeboard.ui.activity.RegisterActivity"
+                android:label="Register"
+                android:screenOrientation="portrait">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="coms.dypatil.noticeboard.ui.activity.LoginActivity" />
+        </activity>
+
+        <activity
+                android:name="coms.dypatil.noticeboard.ui.activity.HomeActivity"
+                android:label="NoticeBoard"
+                android:launchMode="singleTop"
+                android:theme="@style/HomeActivity" />
+
+        <activity
+                android:name="coms.dypatil.noticeboard.ui.activity.CreateNotice"
+                android:label="Create Notice"
+                android:launchMode="singleTop">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="coms.dypatil.noticeboard.ui.activity.HomeActivity" />
+        </activity>
+
+        <activity
+                android:name="coms.dypatil.noticeboard.ui.activity.EditProfileActivity"
+                android:label="Edit Profile"
+                android:theme="@style/AppTheme">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="coms.dypatil.noticeboard.ui.activity.HomeActivity" />
+        </activity>
+
+        <activity
+                android:name="coms.dypatil.noticeboard.ui.activity.UserListProfileActivity"
+                android:label="Person Detail"
+                android:theme="@style/AppTheme" />
+
+        <activity
+                android:name="coms.dypatil.noticeboard.ui.activity.NoticeDetailActivity"
+                android:label="NoticeDetail"
+                android:theme="@style/AppTheme">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="coms.dypatil.noticeboard.ui.activity.HomeActivity" />
+        </activity>
+
+
+        <!-- Service -->
+        <service
+                android:name="coms.dypatil.noticeboard.domain.service.DownloadUserPicService"
+                android:enabled="true"
+                android:exported="false" />
+        <service
+                android:name="coms.dypatil.noticeboard.domain.service.FBConfigService"
+                android:enabled="true"
+                android:exported="false" />
+
+        <service
+                android:name="coms.dypatil.noticeboard.domain.service.FCMServiceKT"
+                android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+            <meta-data
+                    android:name="com.google.firebase.messaging.default_notification_channel_id"
+                    android:value="Notification" />
+        </service>
+
+    </application>
+
+</manifest>

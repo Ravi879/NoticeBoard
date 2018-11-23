@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">NoticeBoard App</string>
+
+    <string name="college_logo">college logo</string>
+    <string name="college_name_1">D Y PATIL COLLEGE OF</string>
+    <string name="college_name_2"><![CDATA[ENGINEERING & TECHNOLOGY]]></string>
+    <string name="college_name_3">KASBA BAWADA</string>
+
+
+    <string name="btn_sign_up">Sign up</string>
+    <string name="btn_log_in">Log in</string>
+    <string name="btn_send_notice">SEND</string>
+    <string name="btn_update_notice">Update</string>
+    <string name="btn_update_profile">UPDATE</string>
+
+    <string name="hint_date_of_birth">Date Of Birth</string>
+    <string name="hint_mobile_no">Mobile No</string>
+    <string name="hint_last_name">Last Name</string>
+    <string name="hint_first_name">First Name</string>
+    <string name="hint_email">E-mail</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_notice_title">Enter the notice title</string>
+    <string name="hint_notice_last_date">Select last date of notice</string>
+    <string name="hint_description">Description</string>
+
+    <string name="menu_title_setting">Setting</string>
+    <string name="menu_title_search">search</string>
+    <string name="menu_title_log_out">Log Out</string>
+    <string name="menu_title_delete">delete</string>
+    <string name="menu_title_edit">Edit</string>
+    <string name="menu_title_github_code">Looking for source code?</string>
+
+
+    <string name="menu_drawer_title_Home">NoticeBoard</string>
+    <string name="nav_drawer_sub_title_category">Category</string>
+    <string name="menu_drawer_title_Faculty">Faculty</string>
+    <string name="menu_drawer_title_student">Student</string>
+    <string name="menu_drawer_title_sub_menu_title">All labels</string>
+    <string name="menu_drawer_title_my_notice">My Notice</string>
+    <string name="menu_drawer_title_profile">Profile</string>
+    <string name="menu_drawer_title_about">About</string>
+
+
+    <string name="edit_profile_title">Edit Profile</string>
+    <string name="edit_profile_triangale_label">Design</string>
+
+    <string name="img_desc_enter_email">Email Address</string>
+    <string name="img_desc_gender">Gender</string>
+    <string name="img_desc_dob">Date of Birth</string>
+    <string name="img_desc_btn_select_dob">Select date of birth</string>
+    <string name="img_desc_department">Department</string>
+    <string name="img_desc_password">Password</string>
+    <string name="img_desc_phone_no">Phone No</string>
+    <string name="img_desc_year">Student Year</string>
+    <string name="img_desc_designation">Designation</string>
+    <string name="img_desc_notice_select_last_date">Calender</string>
+    <string name="img_desc_cover_profile_picture">Profile picture</string>
+    <string name="img_desc_btn_edit_profile">Edit Profile</string>
+
+
+    <string name="rbtn_male">Male</string>
+    <string name="rbtn_female">Female</string>
+
+
+    <!--filter dialog-->
+    <string name="dialog_filter_title">Select Category</string>
+    <string name="dialog_filter_notice_title">Select Notice Category</string>
+
+    <string name="dialog_filter_department">Department</string>
+    <string name="dialog_filter_designation">Designation</string>
+
+    <string name="dialog_filter_All">All</string>
+    <string name="dialog_filter_on_going">Ongoing</string>
+    <string name="dialog_filter_expired">Expired</string>
+
+    <string name="label_notice_title">Title</string>
+    <string name="label_notice_last_date">Last Date</string>
+
+
+    <string name="title_person_list">Persons</string>
+    <string name="title_person_detail">Person Detail</string>
+
+    <string name="label_item_notice_last_date">last date:</string>
+    <string name="label_item_notice_posted_by">posted by:</string>
+
+    <string name="tab_notice_ongoing">Ongoing</string>
+    <string name="tab_notice_expired">Expired</string>
+
+    <string name="user_profile_label_contact">Contact</string>
+
+
+    <!--about app fragment-->
+    <string name="about_app_logo">app_logo</string>
+    <string name="about_copy_right">Copyright  &#169;  D Y Patil Group</string>
+    <string name="about_version">Version 1.0</string>
+    <string name="about_app_detail_line_1">Open source software helped</string>
+    <string name="about_app_detail_line_2">making Noticeboard.</string>
+    <string name="about_btn_share">SHARE</string>
+
+
+    <!--Sample notice-->
+    <string name="notice_title_lorem">The standard Lorem Ipsum passage, used since the 1500s</string>
+    <string name="notice_description_lorem">"Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:
+
+        “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”
+
+        The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A practice not without controversy, laying out pages with meaningless filler text can be very useful when the focus is meant to be on design, not content.
+
+        The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software. Today it's seen all around the web; on templates, websites, and stock designs. Use our generator to get your own, or read on for the authoritative history of lorem ipsum. "
+    </string>
+
+
+</resources>

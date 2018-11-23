@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/nav_item_de"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_item_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_drawer_title_Home" />
+        <item android:title="@string/nav_drawer_sub_title_category">
+            <menu>
+                <group
+                    android:id="@+id/nav_item"
+                    android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_item_faculty"
+                        android:icon="@drawable/ic_nav_faculty"
+                        android:title="@string/menu_drawer_title_Faculty" />
+                    <item
+                        android:id="@+id/nav_item_student"
+                        android:icon="@drawable/ic_nav_student"
+                        android:title="@string/menu_drawer_title_student" />
+                </group>
+            </menu>
+        </item>
+
+        <item android:title="@string/menu_drawer_title_sub_menu_title">
+            <menu>
+                <group
+                    android:id="@+id/nav_item_details"
+                    android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_item_my_notice"
+                        android:icon="@drawable/ic_nav_edit_notice"
+                        android:title="@string/menu_drawer_title_my_notice" />
+                    <item
+                        android:id="@+id/nav_item_profile"
+                        android:icon="@drawable/ic_nav_profile"
+                        android:title="@string/menu_drawer_title_profile" />
+                </group>
+                <item
+                    android:id="@+id/nav_item_about"
+                    android:icon="@drawable/ic_nav_about"
+                    android:title="@string/menu_drawer_title_about" />
+            </menu>
+        </item>
+
+    </group>
+</menu>
+

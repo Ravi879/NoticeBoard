@@ -1,0 +1,17 @@
+<resources>
+
+
+    <style name="LoginActivity" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="HomeActivity" parent="AppTheme">
+        <item name="android:actionModeBackground">@color/prestoPrimary</item>
+        <item name="android:actionModeCloseDrawable">@drawable/ic_close</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+</resources>

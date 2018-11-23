@@ -1,0 +1,34 @@
+<resources>
+
+    <integer name="create_notice_top_layout_weight">2</integer>
+    <integer name="create_notice_bottom_layout_weight">1</integer>
+
+
+    <!--drawer-->
+    <dimen name="nav_drawer_height">@dimen/_145sdp</dimen>
+
+    <!--Home Activity-->
+    <dimen name="login_horizontal_margin">@dimen/_64sdp</dimen>
+    <dimen name="nav_drawer_width">@dimen/_145sdp</dimen>
+
+
+    <!--User Profile List Activity-->
+    <dimen name="profile_list_rv_container_weight" format="float" type="dimen">0.45</dimen>
+    <dimen name="profile_list_profile_container_weight" format="float" type="dimen">0.55</dimen>
+
+
+    <!--Create Notice-->
+    <dimen name="create_notice_horizontal_margin">@dimen/_18sdp</dimen>
+
+
+    <!--User Profile Activity-->
+    <dimen name="profile_img_edit_profile_margin">@dimen/_12sdp</dimen>
+    <dimen name="profile_content_vertical_margin">@dimen/_18sdp</dimen>
+
+
+    <!--Edit Profile-->
+    <dimen name="edit_profile_horizontal_margin">@dimen/_64sdp</dimen>
+
+
+</resources>
+

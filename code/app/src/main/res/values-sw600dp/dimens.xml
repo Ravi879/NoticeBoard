@@ -1,0 +1,135 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--Login Activity-->
+    <dimen name="login_horizontal_margin">64dp</dimen>
+
+    <dimen name="login_btn_layout_height">@dimen/_32sdp</dimen>
+
+    <dimen name="login_vertical_margin">@dimen/_42sdp</dimen>
+
+    <dimen name="login_edt_text_size">@dimen/_14ssp</dimen>
+
+    <dimen name="login_btn_text_size">@dimen/_15ssp</dimen>
+
+    <dimen name="college_name_text_size">@dimen/_14ssp</dimen>
+
+    <!--Register Activity-->
+    <dimen name="register_frame_margin_top">@dimen/_42sdp</dimen>
+    <dimen name="register_frame_horizontal_margin">64dp</dimen>
+
+    <dimen name="register_scroll_margin_top">96dp</dimen>
+    <dimen name="register_scroll_horizontal_padding">38dp</dimen>
+    <dimen name="register_scroll_vertical_padding">78dp</dimen>
+
+    <dimen name="register_profile_img_size">128dp</dimen>
+
+    <dimen name="register_field_text_size">@dimen/_13ssp</dimen>
+
+    <dimen name="register_field_layout_height">@dimen/_26sdp</dimen>
+
+    <dimen name="register_view_line_width">4dp</dimen>
+
+    <!--Home Activity-->
+
+    <!--drawer-->
+    <dimen name="nav_drawer_width">@dimen/_90sdp</dimen>
+    <dimen name="nav_drawer_height">205dp</dimen>
+    <dimen name="nav_drawer_padding">24dp</dimen>
+
+
+    <dimen name="drawer_container_weight" format="float" type="dimen">0.3</dimen>
+    <dimen name="notice_container_weight" format="float" type="dimen">0.8</dimen>
+
+    <dimen name="nav_drawer_img_size">72dp</dimen>
+    <dimen name="nav_drawer_img_margin_bottom">8dp</dimen>
+
+    <!-- we don't need nav drawer top padding on sw600dp + because we'll never show nav drawer -->
+    <dimen name="z_nav_drawer_top_padding">0dp</dimen>
+
+
+    <!--User Profile Activity-->
+    <dimen name="profile_scroll_horizontal_margin">@dimen/_12sdp</dimen>
+
+    <dimen name="profile_view_line_margin_top">18dp</dimen>
+
+    <dimen name="profile_circle_img_size">@dimen/_50sdp</dimen>
+
+    <dimen name="profile_content_horizontal_margin">@dimen/_12sdp</dimen>
+
+    <dimen name="profile_img_edit_profile_size">@dimen/_16sdp</dimen>
+    <dimen name="profile_img_edit_profile_margin_top">@dimen/_8sdp</dimen>
+
+    <dimen name="profile_field_margin_top">@dimen/_12sdp</dimen>
+
+    <dimen name="profile_img_field_width">@dimen/_15sdp</dimen>
+    <dimen name="profile_img_field_height">@dimen/_16sdp</dimen>
+
+    <dimen name="profile_text_field_size">@dimen/_10ssp</dimen>
+    <dimen name="profile_username_size">@dimen/_14ssp</dimen>
+
+
+    <!-- User Profile List Activity -->
+    <dimen name="profile_list_cover_img_width" tools:ignore="ReferenceType">
+        @integer/layout_match_parent
+    </dimen>
+    <dimen name="profile_list_cover_img_height">@dimen/_150sdp</dimen>
+
+    <dimen name="profile_list_circle_img_size">@dimen/_50sdp</dimen>
+
+    <dimen name="profile_list_content_horizontal_margin">@dimen/_8sdp</dimen>
+    <dimen name="profile_list_content_vertical_margin">@dimen/_8sdp</dimen>
+
+    <dimen name="profile_list_field_margin_top">@dimen/_8sdp</dimen>
+
+    <dimen name="profile_list_img_field_width" >@dimen/_15sdp</dimen>
+    <dimen name="profile_list_img_field_height">@dimen/_16sdp</dimen>
+
+
+    <dimen name="profile_list_text_field_margin_start">@dimen/_24sdp</dimen>
+    <dimen name="profile_list_text_field_size">@dimen/_12ssp</dimen>
+
+
+    <dimen name="profile_list_rv_container_weight" format="float" type="dimen">0.35</dimen>
+    <dimen name="profile_list_profile_container_weight" format="float" type="dimen">0.65</dimen>
+
+    <dimen name="profile_cover_img_height">@dimen/_200sdp</dimen>
+    <dimen name="profile_scroll_vertical_margin">@dimen/_150sdp</dimen>
+
+    <!--Edit Profile Activity-->
+    <dimen name="edit_profile_horizontal_margin">@dimen/_32sdp</dimen>
+
+    <dimen name="edit_profile_img_size">@dimen/_72sdp</dimen>
+    <dimen name="edit_profile_img_border_width">2dp</dimen>
+    <dimen name="edit_profile_img_padding_bottom">@dimen/_12sdp</dimen>
+    <dimen name="edit_profile_btn_margin_vertical">28dp</dimen>
+    <dimen name="register_btn_layout_height">@dimen/_28sdp</dimen>
+
+    <!--Create Notice-->
+    <dimen name="create_notice_horizontal_margin">@dimen/_18sdp</dimen>
+    <dimen name="create_notice_vertical_margin">@dimen/_4sdp</dimen>
+    <dimen name="create_notice_text_size">@dimen/_11ssp</dimen>
+
+
+    <!--Notice Detail-->
+    <dimen name="notice_detail_title_size">@dimen/_15ssp</dimen>
+    <dimen name="notice_detail_description_size">@dimen/_10ssp</dimen>
+    <dimen name="notice_detail_text_size">@dimen/_11ssp</dimen>
+
+    <!--Notice Item Row-->
+    <dimen name="notice_item_issue_date_size">@dimen/_7ssp</dimen>
+    <dimen name="notice_item_title_size">@dimen/_9ssp</dimen>
+    <dimen name="notice_item_description_size">@dimen/_8ssp</dimen>
+    <dimen name="notice_item_issuer_size">@dimen/_7ssp</dimen>
+
+
+    <!--Faculty Item Row-->
+    <dimen name="faculty_item_name_size">@dimen/_9ssp</dimen>
+    <dimen name="faculty_item_designation_size">@dimen/_8ssp</dimen>
+
+
+    <!--filter dialog-->
+    <dimen name="filter_item_title_text">@dimen/_11ssp</dimen>
+    <dimen name="filter_item_label_text">@dimen/_9ssp</dimen>
+    <dimen name="filter_spn_item_text">@dimen/_9ssp</dimen>
+
+</resources>
