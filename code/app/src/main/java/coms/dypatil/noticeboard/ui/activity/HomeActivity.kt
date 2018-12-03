@@ -237,7 +237,7 @@ class HomeActivity : AppCompatActivity(), NetworkStateCallBack {
             val shareIntent = Intent(Intent.ACTION_SEND)
             shareIntent.type = "text/plain"
             val shareSubText = "Get the Noticeboard App"
-            val shareBodyText = "hey, check out Noticeboard App. I'm finding it very useful.\nGet it from here:\n https://play.google.com/store/apps/details?id=com.whatsapp&hl=en"
+            val shareBodyText = "hey, check out Noticeboard App. I'm finding it very useful.\nGet it from here:\n https://github.com/Ravi879/NoticeBoard/raw/master/Noticeboard.apk"
             shareIntent.putExtra(Intent.EXTRA_SUBJECT, shareSubText)
             shareIntent.putExtra(Intent.EXTRA_TEXT, shareBodyText)
             startActivity(Intent.createChooser(shareIntent, "Share With"))
