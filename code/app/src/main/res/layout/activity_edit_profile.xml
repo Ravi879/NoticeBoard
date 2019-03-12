@@ -1,89 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/root_layout"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/root_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <include
-                android:id="@+id/app_bar"
-                layout="@layout/layout_app_bar" />
-
-            <LinearLayout
-                android:id="@+id/layout_profile_img"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/prestoPrimary"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:paddingBottom="@dimen/edit_profile_img_padding_bottom">
+                android:orientation="vertical">
 
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:id="@+id/img_user_profile_pic"
-                    android:layout_width="@dimen/edit_profile_img_size"
-                    android:layout_height="@dimen/edit_profile_img_size"
-                    android:layout_gravity="center_horizontal"
-                    android:cropToPadding="true"
-                    android:elevation="5dp"
-                    android:onClick="btnClick"
-                    android:src="@drawable/default_profile_logo"
-                    app:civ_border_color="@color/prestoVeryDarker"
-                    app:civ_border_width="@dimen/edit_profile_img_border_width"
-                    tools:targetApi="lollipop" />
+            <include
+                    android:id="@+id/app_bar"
+                    layout="@layout/layout_app_bar"/>
 
-                <TextView
+            <LinearLayout
+                    android:id="@+id/layout_profile_img"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_6sdp"
-                    android:fontFamily="@font/domine"
+                    android:background="@color/prestoPrimary"
                     android:gravity="center"
-                    android:text="@string/edit_profile_title"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/_17ssp" />
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/edit_profile_img_padding_bottom">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/img_user_profile_pic"
+                        android:layout_width="@dimen/edit_profile_img_size"
+                        android:layout_height="@dimen/edit_profile_img_size"
+                        android:layout_gravity="center_horizontal"
+                        android:cropToPadding="true"
+                        android:elevation="5dp"
+                        android:onClick="btnClick"
+                        android:src="@drawable/default_profile_logo"
+                        app:civ_border_color="@color/prestoVeryDarker"
+                        app:civ_border_width="@dimen/edit_profile_img_border_width"
+                        tools:targetApi="lollipop"/>
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:fontFamily="@font/domine"
+                        android:gravity="center"
+                        android:text="@string/edit_profile_title"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_17ssp"/>
 
             </LinearLayout>
 
             <ImageView
-                android:id="@+id/imageView1"
-                android:layout_width="28dp"
-                android:layout_height="28dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="-15dp"
-                android:contentDescription="@string/edit_profile_triangale_label"
-                android:rotation="45"
-                android:src="@drawable/btn_presto_square_back" />
+                    android:id="@+id/imageView1"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-15dp"
+                    android:contentDescription="@string/edit_profile_triangale_label"
+                    android:rotation="45"
+                    android:src="@drawable/btn_presto_square_back"/>
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:paddingStart="@dimen/edit_profile_horizontal_margin"
-                android:paddingEnd="@dimen/edit_profile_horizontal_margin">
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="@dimen/edit_profile_horizontal_margin"
+                    android:paddingEnd="@dimen/edit_profile_horizontal_margin">
 
 
                 <LinearLayout style="@style/edit_profile_field_layout">
 
                     <EditText
-                        android:id="@+id/edt_first_name"
-                        style="@style/edit_profile_edt_name"
-                        android:hint="@string/hint_first_name" />
+                            android:id="@+id/edt_first_name"
+                            style="@style/edit_profile_edt_name"
+                            android:hint="@string/hint_first_name"/>
 
-                    <View style="@style/edit_profile_view_line" />
+                    <View style="@style/edit_profile_view_line"/>
 
                     <EditText
-                        android:id="@+id/edt_last_name"
-                        style="@style/edit_profile_edt_name"
-                        android:hint="@string/hint_last_name" />
+                            android:id="@+id/edt_last_name"
+                            style="@style/edit_profile_edt_name"
+                            android:hint="@string/hint_last_name"/>
 
                 </LinearLayout>
 
@@ -91,48 +91,49 @@
                 <LinearLayout style="@style/edit_profile_field_layout">
 
                     <ImageView
-                        style="@style/edit_profile_img"
-                        android:contentDescription="@string/img_desc_enter_email"
-                        android:src="@drawable/ic_email" />
+                            style="@style/edit_profile_img"
+                            android:contentDescription="@string/img_desc_enter_email"
+                            android:src="@drawable/ic_email"/>
 
                     <EditText
-                        android:id="@+id/edt_email"
-                        style="@style/edit_profile_edt"
-                        android:layout_width="match_parent"
-                        android:hint="@string/hint_email"
-                        android:inputType="textEmailAddress" />
+                            android:id="@+id/edt_email"
+                            style="@style/edit_profile_edt"
+                            android:layout_width="match_parent"
+                            android:hint="@string/hint_email"
+                            android:inputType="textEmailAddress"
+                            android:maxLength="50"/>
                 </LinearLayout>
 
 
                 <LinearLayout style="@style/edit_profile_field_layout">
 
                     <ImageView
-                        style="@style/edit_profile_img"
-                        android:contentDescription="@string/img_desc_gender"
-                        android:src="@drawable/ic_gender" />
+                            style="@style/edit_profile_img"
+                            android:contentDescription="@string/img_desc_gender"
+                            android:src="@drawable/ic_gender"/>
 
                     <RadioGroup
-                        android:id="@+id/rGroup"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/editTextBG"
-                        android:orientation="horizontal"
-                        android:paddingStart="@dimen/edit_profile_field_horizontal_padding"
-                        android:paddingEnd="0dp">
+                            android:id="@+id/rGroup"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/editTextBG"
+                            android:orientation="horizontal"
+                            android:paddingStart="@dimen/edit_profile_field_horizontal_padding"
+                            android:paddingEnd="0dp">
 
                         <androidx.appcompat.widget.AppCompatRadioButton
-                            android:id="@+id/rbtn_male"
-                            style="@style/edit_profile_radio_btn"
-                            android:layout_weight="0.47"
-                            android:checked="true"
-                            android:text="@string/rbtn_male" />
+                                android:id="@+id/rbtn_male"
+                                style="@style/edit_profile_radio_btn"
+                                android:layout_weight="0.47"
+                                android:checked="true"
+                                android:text="@string/rbtn_male"/>
 
                         <androidx.appcompat.widget.AppCompatRadioButton
-                            android:id="@+id/rbtn_female"
-                            style="@style/edit_profile_radio_btn"
-                            android:layout_marginStart="@dimen/_4sdp"
-                            android:layout_weight="0.78"
-                            android:text="@string/rbtn_female" />
+                                android:id="@+id/rbtn_female"
+                                style="@style/edit_profile_radio_btn"
+                                android:layout_marginStart="@dimen/_4sdp"
+                                android:layout_weight="0.78"
+                                android:text="@string/rbtn_female"/>
                     </RadioGroup>
 
 
@@ -142,80 +143,80 @@
                 <LinearLayout style="@style/edit_profile_field_layout">
 
                     <ImageView
-                        style="@style/edit_profile_img"
-                        android:contentDescription="@string/img_desc_dob"
-                        android:src="@drawable/ic_birthday" />
+                            style="@style/edit_profile_img"
+                            android:contentDescription="@string/img_desc_dob"
+                            android:src="@drawable/ic_birthday"/>
 
                     <EditText
-                        android:id="@+id/edt_dob"
-                        style="@style/edit_profile_edt"
-                        android:layout_width="0dp"
-                        android:layout_weight="0.8"
-                        android:background="@color/edit_profile_disabled_edt_text_bg"
-                        android:enabled="false"
-                        android:focusable="false"
-                        android:hint="@string/hint_date_of_birth"
-                        android:inputType="text" />
+                            android:id="@+id/edt_dob"
+                            style="@style/edit_profile_edt"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.8"
+                            android:background="@color/edit_profile_disabled_edt_text_bg"
+                            android:enabled="false"
+                            android:focusable="false"
+                            android:hint="@string/hint_date_of_birth"
+                            android:inputType="text"/>
 
                     <ImageView
-                        android:id="@+id/img_btn_calendar"
-                        style="@style/edit_profile_img_btn"
-                        android:layout_width="0dp"
-                        android:layout_weight="0.2"
-                        android:contentDescription="@string/img_desc_btn_select_dob"
-                        android:onClick="btnClick"
-                        android:padding="4dp"
-                        android:src="@drawable/ic_calendar"
-                        android:tint="@color/pink_primary" />
+                            android:id="@+id/img_btn_calendar"
+                            style="@style/edit_profile_img_btn"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.2"
+                            android:contentDescription="@string/img_desc_btn_select_dob"
+                            android:onClick="btnClick"
+                            android:padding="4dp"
+                            android:src="@drawable/ic_calendar"
+                            android:tint="@color/pink_primary"/>
 
                 </LinearLayout>
 
                 <LinearLayout
-                    style="@style/edit_profile_field_layout"
-                    android:background="@color/editTextBG">
+                        style="@style/edit_profile_field_layout"
+                        android:background="@color/editTextBG">
 
                     <ImageView
-                        style="@style/edit_profile_img"
-                        android:contentDescription="@string/img_desc_department"
-                        android:src="@drawable/ic_department" />
+                            style="@style/edit_profile_img"
+                            android:contentDescription="@string/img_desc_department"
+                            android:src="@drawable/ic_department"/>
 
                     <Spinner
-                        android:id="@+id/spn_department"
-                        style="@style/edit_profile_spn" />
+                            android:id="@+id/spn_department"
+                            style="@style/edit_profile_spn"/>
 
 
                 </LinearLayout>
 
 
                 <LinearLayout
-                    style="@style/edit_profile_field_layout"
-                    android:background="@color/editTextBG">
+                        style="@style/edit_profile_field_layout"
+                        android:background="@color/editTextBG">
 
                     <ImageView
-                        style="@style/edit_profile_img"
-                        android:contentDescription="@string/img_desc_designation"
-                        android:src="@drawable/ic_designation" />
+                            style="@style/edit_profile_img"
+                            android:contentDescription="@string/img_desc_designation"
+                            android:src="@drawable/ic_designation"/>
 
                     <Spinner
-                        android:id="@+id/spn_designation"
-                        style="@style/edit_profile_spn" />
+                            android:id="@+id/spn_designation"
+                            style="@style/edit_profile_spn"/>
 
 
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/layout_year"
-                    style="@style/edit_profile_field_layout"
-                    android:background="@color/editTextBG">
+                        android:id="@+id/layout_year"
+                        style="@style/edit_profile_field_layout"
+                        android:background="@color/editTextBG">
 
                     <ImageView
-                        style="@style/edit_profile_img"
-                        android:contentDescription="@string/img_desc_year"
-                        android:src="@drawable/ic_year" />
+                            style="@style/edit_profile_img"
+                            android:contentDescription="@string/img_desc_year"
+                            android:src="@drawable/ic_year"/>
 
                     <Spinner
-                        android:id="@+id/spn_year"
-                        style="@style/edit_profile_spn" />
+                            android:id="@+id/spn_year"
+                            style="@style/edit_profile_spn"/>
 
                 </LinearLayout>
 
@@ -223,17 +224,17 @@
                 <LinearLayout style="@style/edit_profile_field_layout">
 
                     <ImageView
-                        style="@style/edit_profile_img"
-                        android:contentDescription="@string/img_desc_phone_no"
-                        android:src="@drawable/ic_phone" />
+                            style="@style/edit_profile_img"
+                            android:contentDescription="@string/img_desc_phone_no"
+                            android:src="@drawable/ic_phone"/>
 
                     <EditText
-                        android:id="@+id/edt_phone_no"
-                        style="@style/edit_profile_edt"
-                        android:layout_width="match_parent"
-                        android:hint="@string/hint_mobile_no"
-                        android:inputType="phone"
-                        android:maxLength="10"/>
+                            android:id="@+id/edt_phone_no"
+                            style="@style/edit_profile_edt"
+                            android:layout_width="match_parent"
+                            android:hint="@string/hint_mobile_no"
+                            android:inputType="phone"
+                            android:maxLength="10"/>
 
                 </LinearLayout>
 
@@ -241,44 +242,44 @@
                 <LinearLayout style="@style/edit_profile_field_layout">
 
                     <ImageView
-                        style="@style/edit_profile_img"
-                        android:contentDescription="@string/img_desc_password"
-                        android:src="@drawable/ic_lock" />
+                            style="@style/edit_profile_img"
+                            android:contentDescription="@string/img_desc_password"
+                            android:src="@drawable/ic_lock"/>
 
                     <EditText
-                        android:id="@+id/edt_password"
-                        style="@style/edit_profile_edt"
-                        android:layout_width="match_parent"
-                        android:hint="@string/hint_password"
-                        android:inputType="textPassword"
-                        android:maxLength="12"/>
+                            android:id="@+id/edt_password"
+                            style="@style/edit_profile_edt"
+                            android:layout_width="match_parent"
+                            android:hint="@string/hint_password"
+                            android:inputType="textPassword"
+                            android:maxLength="12"/>
 
                 </LinearLayout>
 
                 <Button
-                    android:id="@+id/btn_save_profile"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/register_btn_layout_height"
-                    android:layout_marginTop="@dimen/edit_profile_btn_margin_vertical"
-                    android:layout_marginBottom="@dimen/edit_profile_btn_margin_vertical"
-                    android:background="@drawable/btn_pink_back"
-                    android:onClick="btnClick"
-                    android:text="@string/btn_update_profile"
-                    android:textAllCaps="false"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/register_btn_text_size" />
+                        android:id="@+id/btn_save_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/register_btn_layout_height"
+                        android:layout_marginTop="@dimen/edit_profile_btn_margin_vertical"
+                        android:layout_marginBottom="@dimen/edit_profile_btn_margin_vertical"
+                        android:background="@drawable/btn_pink_back"
+                        android:onClick="btnClick"
+                        android:text="@string/btn_update_profile"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/register_btn_text_size"/>
 
             </LinearLayout>
         </LinearLayout>
 
         <com.github.ybq.android.spinkit.SpinKitView xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/loading_indicator"
-            style="@style/SpinKitView.Large.DoubleBounce"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:visibility="gone"
-            app:SpinKit_Color="@color/colorAccent" />
+                                                    android:id="@+id/loading_indicator"
+                                                    style="@style/SpinKitView.Large.DoubleBounce"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_centerInParent="true"
+                                                    android:visibility="gone"
+                                                    app:SpinKit_Color="@color/colorAccent"/>
 
     </RelativeLayout>
 </ScrollView>

@@ -90,6 +90,7 @@
                             style="@style/register_edt"
                             android:layout_width="match_parent"
                             android:hint="@string/hint_email"
+                            android:maxLength="50"
                             android:inputType="textEmailAddress" />
                     </LinearLayout>
 

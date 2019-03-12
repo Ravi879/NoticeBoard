@@ -80,7 +80,7 @@
             android:drawableStart="@drawable/ic_person_white"
             android:hint="@string/hint_email"
             android:inputType="textEmailAddress"
-            android:maxLength="25"
+            android:maxLength="50"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.503"
             app:layout_constraintStart_toStartOf="parent"
