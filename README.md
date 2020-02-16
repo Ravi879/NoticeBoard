@@ -50,7 +50,12 @@ For example, The student studding in mechanical engineering can receive notice f
 
 ### Author
 
-- **Ravi Gadhiya**
+- **Ravi Gadhiya** <br>
+[https://github.com/Ravi879](https://github.com/Ravi879) <br>
+[https://www.linkedin.com/in/gadhiyaravi](https://www.linkedin.com/in/gadhiyaravi) <br>
+
+Please, let me know if this project is useful to you or give suggestions at gadhiyaravi879@gmail.com. I would loved to hear from you guys. <br>
+<b> Happy coding. :blush: </b>
 
 ### License
 
